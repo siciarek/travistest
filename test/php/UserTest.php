@@ -10,8 +10,7 @@ class UserTest extends PHPUnit_Framework_TestCase
 {
     public function testSetFirstName()
     {
-        $first_name = "Jacek";
-        $last_name = "Siciarek";
+        $first_name = "John";
 
         $this->user->setFirstName($first_name);
         $this->assertEquals($first_name, $this->user->getFirstName());
@@ -19,7 +18,7 @@ class UserTest extends PHPUnit_Framework_TestCase
 
     public function testSetLastName()
     {
-        $last_name = "Siciarek";
+        $last_name = "Doe";
 
         $this->user->setLastName($last_name);
         $this->assertEquals($last_name, $this->user->getLastName());
