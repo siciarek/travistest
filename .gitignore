@@ -1,3 +1,6 @@
+# PHPStorm IDE setup
+.idea
+
 # Bootstrap
 app/bootstrap*
 
