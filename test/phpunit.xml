@@ -23,7 +23,7 @@
 
     <testsuites>
         <testsuite name="Sample Unit Tests">
-            <file>./UserTest.php</file>
+            <file>lib/UserTest.php</file>
          </testsuite>
     </testsuites>
 
