@@ -6,24 +6,27 @@
  * Time: 22:35
  * To change this template use File | Settings | File Templates.
  */
-class User
+class UserTest extends PHPUnit_Framework_TestCase
 {
-    private $first_name;
-    private $last_name;
+    public function testSetFirstName()
+    {
+        $first_name = "Jacek";
+        $last_name = "Siciarek";
 
-    public function setFirstName($value) {
-        $this->first_name = (string) $value;
+        $this->user->setFirstName($first_name);
+        $this->assertEquals($first_name, $this->user->getFirstName());
     }
 
-    public function getFirstName() {
-        return $this->first_name;
+    public function testSetLastName()
+    {
+        $last_name = "Siciarek";
+
+        $this->user->setLastName($last_name);
+        $this->assertEquals($last_name, $this->user->getLastName());
     }
 
-    public function setLastName($value) {
-        $this->last_name = (string) $value;
-    }
-
-    public function getLastName() {
-        return $this->first_name;
+    public function setUp()
+    {
+        $this->user = new User();
     }
 }
