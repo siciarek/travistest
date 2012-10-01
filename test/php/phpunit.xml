@@ -2,7 +2,7 @@
 <!DOCTYPE phpunit>
 
 <phpunit
-    bootstrap="test/php/bootstrap.php"
+    bootstrap="./bootstrap.php"
     strict="true"
     verbose="true"
     fork="true"
@@ -23,7 +23,7 @@
 
     <testsuites>
         <testsuite name="Sample Unit Tests">
-            <file>test/php/UserTest.php</file>
+            <file>./UserTest.php</file>
          </testsuite>
     </testsuites>
 
