@@ -22,6 +22,7 @@ class UserTest extends PHPUnit_Framework_TestCase
 
         $this->user->setLastName($last_name);
         $this->assertEquals($last_name, $this->user->getLastName());
+        $this->assertTrue(false);
     }
 
     public function setUp()
